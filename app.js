@@ -8,7 +8,7 @@ const connectDB = require('./db/connect')
 app.use(express.json())
 
 app.use('/api/v1/result', webrequest)
-// app.use('/',(req,res)=>{res.send('HEeloo')})
+app.use('/',(req,res)=>{res.send('HEeloo')})
 
 const start = async()=>{
     try {
